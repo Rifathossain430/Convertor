@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/amountET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Enter Your Ammount"
+            android:inputType="numberDecimal"
+            android:padding="5dp"></EditText>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/dollartotaka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Dollar to Taka">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/takatodollar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Taka to Dollar">
+
+            </RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/convertBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#87D7FC"
+            android:text="Convert"
+            android:textColor="#000">
+
+        </Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:id="@+id/resultET">
+
+        </TextView>
+
+
+    </LinearLayout>
+</layout>
